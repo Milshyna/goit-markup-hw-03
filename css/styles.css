@@ -39,6 +39,25 @@ body {
 .link.curren {
   color: #2196f3;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0, auto;
+  outline: 1px solid red;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rest(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* ----------------Header------------------ */
 .logotype {
   font-family: Raleway;
@@ -54,15 +73,28 @@ body {
 }
 
 .header-link {
+  display: flex;
+
+  margin-left: 93px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-text-color);
 }
+.header-link-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-link-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .header-link .link:hover,
 .header-link .link:focus {
   color: var(--accent-text-color);
+}
+.header-link .link {
+  display: block;
 }
 .link.link-tel,
 .link.link-mail {
@@ -78,6 +110,22 @@ body {
 .link.link-mail:focus {
   color: var(--accent-text-color);
 }
+.flex-header,
+.navigation,
+.flex-contact {
+  display: flex;
+}
+.flex-header,
+.navigation {
+  align-items: center;
+}
+.flex-contact {
+  margin-left: auto;
+}
+.flex-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* -----------------------------Hero------------------------------ */
 .hero {
   background: var(--darck-background);
