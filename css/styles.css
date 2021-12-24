@@ -164,7 +164,16 @@ body {
   background: #188ce8;
 }
 /* -----------------------Особенности--------------------------- */
+.flex-propet {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.propet-item:not(:last-child) {
+  margin-right: 30px;
+}
 .propet-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -173,6 +182,9 @@ body {
   color: var(--header-text-color);
 }
 .propet-text {
+  display: inline-block;
+  min-width: 270px;
+  min-height: 75px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -188,10 +200,50 @@ body {
   letter-spacing: 0.03em;
   color: var(--header-text-color);
 }
+.picture-work {
+  display: flex;
+  padding-bottom: 94px;
+}
+.work-title {
+  margin-bottom: 50px;
+}
+.img-work-item {
+  display: block;
+  width: 370px;
+  height: 294px;
+}
+.img-work-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* ----------------Команда------------------------------------ */
 .comand {
   background: var(--second-background);
 }
+.title-author {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.flex-author {
+  display: flex;
+  padding-bottom: 94px;
+}
+.author-item {
+  flex-direction: column;
+  min-width: 270px;
+  min-height: 368px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.author-item:not(:last-child) {
+  margin-right: 30px;
+}
+.img-author {
+  display: block;
+  width: 270px;
+  height: 260px;
+}
+
 .author-title {
   font-weight: 500;
   font-size: 16px;
@@ -199,6 +251,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .profession {
   font-weight: 400;
@@ -207,9 +261,23 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  padding-bottom: 30px;
 }
 /* ---------------Кнопки Портфолио------------------------- */
-.second-btn .second-btn-item {
+.second-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+.flex-second-btn:not(:last-child) {
+  margin-right: 8px;
+}
+.second-btn-item {
+  min-width: 73px;
+  min-height: 38px;
+  border-radius: 4px;
+  display: flex;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -219,13 +287,37 @@ body {
   color: var(--second-button-text-color);
   background: var(--button-inactive-background);
 }
+
 .second-btn .second-btn-item:hover,
 .second-btn .second-btn-item:focus {
   color: var(--hero-button-text-color);
   background: var(--button-active-background);
 }
 /* ---------------------Наши проекты в портофолио----------------------- */
+
+.flex-project {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+.flex-project-item {
+  width: 370px;
+  height: 404px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  border: 1px solid #eeeeee;
+}
+.flex-project-item:nth-child(3n) {
+  margin-right: 0;
+}
+.flex-img-portfolio {
+  display: block;
+  width: 370px;
+  height: 294px;
+}
 .project-link-title {
+  padding: 20px 24px 4px 24px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -233,6 +325,9 @@ body {
   color: var(--header-text-color);
 }
 .project-link-item {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
@@ -243,8 +338,19 @@ body {
 .footer {
   background: var(--darck-background);
 }
+.flex-footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address-nav {
+  display: flex;
+  flex-direction: column;
+}
 .logotype.logotype-footer {
   color: var(--white-text-color);
+  margin-bottom: 20px;
 }
 .address-text-footer {
   font-weight: 400;
@@ -253,6 +359,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-text-color);
   font-style: normal;
+  margin-bottom: 9px;
+}
+.footer-tel {
+  margin-bottom: 9px;
 }
 .address-nav .footer-tel,
 .address-nav .footer-mail {
