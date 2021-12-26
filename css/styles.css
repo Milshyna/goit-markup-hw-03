@@ -115,6 +115,7 @@ body {
 .flex-header {
   padding-top: 25px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 .flex-header-nav,
 .navigation {
@@ -255,6 +256,10 @@ body {
   width: 270px;
   height: 260px;
 }
+.flex-author-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .author-title {
   font-weight: 500;
@@ -263,7 +268,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
-  margin-top: 30px;
+
   margin-bottom: 10px;
 }
 .profession {
@@ -273,7 +278,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  padding-bottom: 30px;
 }
 /* ---------------Кнопки Портфолио------------------------- */
 
@@ -292,6 +296,7 @@ body {
   min-width: 73px;
   min-height: 38px;
   border-radius: 4px;
+  border: none;
   display: flex;
   padding: 6px 22px;
   font-family: inherit;
@@ -368,7 +373,7 @@ body {
 }
 .logotype.logotype-footer {
   color: var(--white-text-color);
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .address-text-footer {
   font-weight: 400;
@@ -377,10 +382,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-text-color);
   font-style: normal;
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 }
 .footer-tel {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 }
 .address-nav .footer-tel,
 .address-nav .footer-mail {
